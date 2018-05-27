@@ -1,0 +1,78 @@
+<!doctype HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+<title>Loading</title>
+<style>
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background: linear-gradient(#500900,#720D00) no-repeat;
+}
+
+.loading {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+}
+.loading div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #E26B5B;
+  animation: loading 0.6s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.loading div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.4s;
+}
+.loading div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.2s;
+}
+.loading div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes loading {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+.watermark {
+  position: absolute;
+  display: inline;
+  bottom: 24px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 300px;
+  font-family: 'Philosopher', sans-serif;
+  letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+<div class="loading"><div></div><div></div><div></div></div>
+<center>
+<div class="watermark"><font color=#E26B5B size=6px>Harpy Roleplay</font><br><font color=#E26B5B size=2px>Сервер в стадии разработки!</font></div>
+</center>
+</body>
+</html>
